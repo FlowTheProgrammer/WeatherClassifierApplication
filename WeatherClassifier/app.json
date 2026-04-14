@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "WeatherClassifier",
+    "slug": "WeatherClassifier",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow WeatherClassifier to access your photos to select images for weather classification."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow WeatherClassifier to access your camera to take photos for weather classification."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "mediaLibraryPermission": "Allow WeatherClassifier to access your media library to save classified weather images."
+        }
+      ]
+    ]
+  }
+}
