@@ -18,10 +18,10 @@ return (
 
             <View style={styles.row}>
                 <View style={styles.section}>
-                    <Text style={styles.sectionText}>Idenify 11 Possible Conditions</Text>
+                    <Text style={styles.sectionText}>Identify 11 Possible Conditions</Text>
                 </View>
                 <View style={styles.section}>
-                <Text style={styles.sectionText}>Instant!</Text>
+                <Text style={styles.sectionText}>Instant Results</Text>
                 </View>
                 <View style={styles.section}>
                 <Text style={styles.sectionText}>ML Generated</Text>
@@ -52,7 +52,7 @@ return (
 
                 <View style={styles.text}>
                 <Text style={styles.textTitle}>Upload a photo</Text>
-                <Text style={styles.textDesc}>Choose a photo to use from you library</Text>
+                <Text style={styles.textDesc}>Choose a photo to use from your library</Text>
             </View>
             <Text style={styles.arrow}>--</Text>
 
@@ -78,6 +78,10 @@ return (
                         <Text style={styles.conditionLabel}>{item.label}</Text>
                         </View>
                 ))}
+            </View>
+
+            <View style={styles.footer}>
+                <Text style={{fontSize: 12, color: '#aaa', textAlign: 'center', padding: 20}}>Notice: Photos will be used in a machine learning model</Text>
             </View>
 
             
@@ -215,9 +219,10 @@ const styles = StyleSheet.create({
         fontSize: 13,
         color: '#555',
         fontWeight: '500'
+    },
+    footer:{
+        marginTop: 32,
     }
-
-  
 
 
 });

@@ -6,6 +6,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import StartScreen from './screens/StartScreen';
 import HomeScreen from './screens/HomeScreen';
+import CameraScreen from './screens/CameraScreen';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -16,6 +17,7 @@ export default function App() {
       <Stack.Navigator screenOptions={{ headerShown: false}}>
         <Stack.Screen name="Start" component = {StartScreen} />
         <Stack.Screen name="Home" component = {HomeScreen} />
+        <Stack.Screen name="Camera" component = {CameraScreen} />
       </Stack.Navigator>
       </NavigationContainer>
   );
